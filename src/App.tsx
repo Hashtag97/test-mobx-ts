@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CheckBox from "./components/CheckBox";
+import Input from "./components/Input";
+import List from "./components/list";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div>
+				Test 1 CheckBox <CheckBox />
+			</div>
+			<div>
+				Test 2 Input <Input />
+			</div>
+			<div>
+				Test 3 list api <List />
+			</div>
+		</div>
+	);
 }
 
 export default App;
